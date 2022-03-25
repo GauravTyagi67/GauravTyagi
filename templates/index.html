@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gaurav Tyagi</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.ico' %}">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/feature.css' %}">
+    <!-- Style css -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+
+<body class="template-color-1 home-sticky spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
+    <main class="main-page-wrapper">
+        <!-- start slider area -->
+        <div class="rn-slider-area">
+            <div class="container">
+                <div class="row row--30 pt--100 pt_sm--50">
+                    {% include "includes/profile.html" %}
+                    <div class="col-lg-6">
+                        <div class="sticky-home-wrapper">
+
+                            <!-- about area -->
+                            {% include "includes/about.html" %}
+                            <!-- about area end -->
+
+                            <!-- Start skiull area -->
+                            {% include "includes/skill.html" %}
+                            <!-- End skiull area -->
+
+                            <!-- start services area -->
+                           {% include "includes/service.html" %}
+                            <!-- End services area -->
+
+                            <!-- start portfolio area -->
+                            {% include "includes/portfolio.html" %}
+                            <!-- End portfolio area -->
+
+                            <!-- start blog area -->
+                            {% include "includes/blog.html" %}
+                            <!-- End blog area -->
+
+                            <!-- start testimonial area -->
+                            {% include "includes/testimonial.html" %}
+                            <!-- End testimonial area -->
+
+                            <!-- Start contact area -->
+                            {% include "includes/contact.html" %}
+                            <!-- End contact area -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End slider area -->
+
+        <!-- Back to  top Start -->
+        <div class="backto-top">
+            <div>
+                <i data-feather="arrow-up"></i>
+            </div>
+        </div>
+        <!-- Back to top end -->
+    </main>
+    <!-- JS ============================================ -->
+    <script src="{% static 'assets/js/vendor/jquery.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizer.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/feather.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/bootstrap.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/text-type.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/wow.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/aos.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/particles.js' %}"></script>
+    <!-- main JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script>
+      window.setTimeout(function () {
+          $("#index-alert").fadeTo(1000, 0).slideUp(1000, function () {
+              $(this).remove();
+          });
+      }, 2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="rn-portfolio-area single-card-sticky section-height">
+    <div class="inner">
+        <h5 class="title">My Portfolio</h5>
+        <ul class="card-list">
+            {% for portfolio in portfolio %}
+            <li><a href="{{portfolio.link.url}}">{{portfolio.name}}<i data-feather="arrow-right"></i></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

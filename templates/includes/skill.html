@@ -1,0 +1,23 @@
+{% load static %}
+<div class="rn-skill-area section-height">
+    <div class="inner slide">
+        <h5 class="title">About My Skill</h5>
+        <div class="skill-share-inner pt--100">
+            <span class="title">Primary Skills on</span>
+            <ul class="skill-share d-flex liststyle">
+                {% for skill in skill1 %}
+                <li><img src="{{skill.icon.url}}" alt="{{skill.name}}"></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="skill-share-inner skill-share-inner-width margin-top-25">
+            <span class="title">Secondary Skills on</span>
+            <ul class="skill-share d-flex liststyle">
+                {% for skill in skill2 %}
+                <li><img src="{{skill.icon.url}}" alt="{{skill.name}}"></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

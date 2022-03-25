@@ -1,0 +1,22 @@
+{% load static %}
+<div class="col-lg-6">
+    <div class="d-flex flex-wrap align-content-start h-100">
+        <div class="sticky-top-slider position-sticky sticky-top rbt-sticky-top-adjust-two">
+            <div class="banner-details-wrapper-sticky slide">
+                <div class="thumbnail">
+                    <img src="{{profile.profile_pic.url}}" alt="Personal Portfolio">
+                </div>
+                <div class="banner-title-area pt--30">
+                    <h1 class="title">Hi, I'm <span>{{profile.fullname}}</span><br>
+                        <span class="span"> {{profile.designation}}.</span>
+                    </h1>
+                    <p class="disc">{{profile.bio}}</p>
+                </div>
+                <div class="button-group text-center text-md-left pt--60 pt_md--40 pt_sm--40">
+                    <a class="rn-btn" href="{{profile.cv.url}}"><span>Download My CV</span></a>
+                    <a class="rn-btn" href="#contacts"><span>Hire Me</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
